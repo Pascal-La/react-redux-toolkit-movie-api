@@ -1,0 +1,144 @@
+@import "../../common/colors.scss";
+
+@media (max-width: 768px) {
+  .movie-section {
+    display: flex;
+    padding: 2em 0;
+    flex-wrap: wrap;
+    font-weight: 400;
+    color: $font-primary;
+    justify-content: center;
+  }
+
+  .section-right {
+    order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-left {
+    order: 2;
+    width: 100%;
+    margin: 2em 0;
+  }
+
+  .movie-rating {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5em;
+    color: $font-secondary;
+
+    span {
+      width: 100%;
+      margin-top: 0.5em;
+    }
+  }
+
+  .movie-title {
+    font-size: 2em;
+    color: $font-primary;
+  }
+
+  .movie-plot {
+    margin-top: 20px;
+    line-height: 1.8rem;
+  }
+
+  .movie-info > div span:first-child {
+    display: block;
+    padding: 0.5em 0;
+    font-weight: 600;
+    color: $font-primary;
+  }
+
+  .movie-info > div span {
+    margin-top: 1em;
+    color: $font-secondary;
+  }
+
+  .fa-star {
+    color: #ff9e00;
+  }
+  .fa-thumbs-up {
+    color: #fafafa;
+  }
+  .fa-film {
+    color: rgb(191, 213, 214);
+  }
+  .fa-calendar {
+    color: peachpuff;
+  }
+}
+
+@media (min-width: 769px) {
+  .movie-section {
+    display: flex;
+    font-weight: 400;
+    padding: 3em 15em;
+    color: $font-primary;
+    justify-content: space-evenly;
+  }
+
+  .section-right {
+    order: 2;
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-left {
+    order: 1;
+    width: 100%;
+  }
+
+  .movie-rating {
+    display: flex;
+    margin-top: 1.5em;
+    color: $font-secondary;
+
+    span {
+      margin-right: 1em;
+    }
+  }
+
+  .movie-title {
+    font-size: 2.5em;
+    color: $font-primary;
+  }
+
+  .movie-plot {
+    margin: 2em 0;
+    line-height: 1.8rem;
+  }
+
+  .movie-info > div span:first-child {
+    width: 6em;
+    padding: 0.5em 0;
+    font-weight: 600;
+    color: $font-primary;
+    display: inline-block;
+  }
+
+  .movie-info > div span {
+    color: $font-secondary;
+  }
+
+  .fa-star {
+    color: #ff9e00;
+  }
+  .fa-thumbs-up {
+    color: #fafafa;
+  }
+  .fa-film {
+    color: rgb(191, 213, 214);
+  }
+  .fa-calendar {
+    color: peachpuff;
+  }
+
+  .section-right {
+    margin-left: 3em;
+  }
+}

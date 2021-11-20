@@ -1,0 +1,30 @@
+@import "../../common/colors.scss";
+
+.movie-list,
+.show-list {
+  margin: 1.5em 0;
+  text-align: center;
+
+  h2 {
+    font-weight: 400;
+    margin-bottom: 1.5em;
+    color: $font-secondary;
+  }
+
+  h3 {
+    color: $font-primary;
+  }
+}
+
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: 426px) {
+  .movie-list,
+  .show-list {
+    text-align: left;
+  }
+}

@@ -1,0 +1,102 @@
+@import "../../common/colors.scss";
+
+.initial-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  form {
+    height: 4em;
+    width: 100%;
+    margin: 4em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input,
+  button {
+    border: none;
+    height: 2.5em;
+    padding: 0.5em;
+    font-size: 0.9em;
+    border-radius: 0.2em;
+  }
+
+  input {
+    width: 100%;
+    margin-right: 0.5em;
+  }
+
+  h2 {
+    text-align: center;
+    color: $font-primary;
+  }
+}
+
+.fetched-form {
+  form {
+    height: 4em;
+    display: flex;
+    margin-top: 2em;
+    align-items: center;
+
+    input,
+    button {
+      border: none;
+      height: 2.5em;
+      padding: 0.5em;
+      border-radius: 0.2em;
+    }
+    input {
+      width: 100%;
+      margin-right: 0.5em;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .initial-form {
+    input,
+    button {
+      font-size: 1em;
+    }
+
+    input {
+      width: 30%;
+    }
+  }
+
+  .fetched-form {
+    form {
+      input,
+      button {
+        height: 3em;
+      }
+
+      input {
+        width: 30%;
+      }
+    }
+  }
+}
+
+// @media (min-width: 769px) {
+//   .fetched-form {
+//     form {
+//       input {
+//         width: 40%;
+//       }
+//     }
+//   }
+// }
+
+// @media (min-width: 1025px) {
+//   .fetched-form {
+//     form {
+//       input {
+//         width: 20%;
+//       }
+//     }
+//   }
+// }
